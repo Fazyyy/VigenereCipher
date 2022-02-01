@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigenère cipher</title>
+  <link rel="preload" as="style" href="assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/styles.css"></noscript>
+  <script defer src="./assets/main.js"></script>
+</head>
+<body>
+  <div class="container">
+		<noscript>
+      <p>This requires JavaScript, which is not supported by your browser or is disabled.</p>
+    </noscript>
+    <label for="text">Text:</label>
+    <textarea id="text" placeholder="Enter your text..."></textarea>
+    <label for="key">Key:</label>
+    <input type="text" placeholder="Enter a key..." id="key" style="width:10em"/>
+    <button onclick="app.doCrypt(false);">Encrypt</button>
+    <button onclick="app.doCrypt(true);">Decrypt</button>
+	</div>
+</body>
+</html>
